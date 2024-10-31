@@ -22,4 +22,17 @@ urlpatterns = [
     path('insert_topic/',insert_topic,name='insert_topic'),
     path('insert_webpage/',insert_webpage,name='insert_webpage'),
     path('insert_access/',insert_access,name='insert_access'),
+    #Passing the data through the url to  view function
+    path('CustomizedView/<data>',CustomizedView,name='CustomizedView'),
 ]
+
+'''
+Changing of 1.site_header
+            2.site_title
+            3.index-title
+Based on user requirement
+'''
+
+admin.site.site_header='Charan Django Administration'
+admin.site.site_title='Charan site title'
+admin.site.index_title='CHARAN '
